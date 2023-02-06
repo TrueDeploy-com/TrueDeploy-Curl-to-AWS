@@ -1,0 +1,6 @@
+name: TrueDeploy-Curl-to-AWS
+author: TrueDeploy
+description: Github action to send data to the TrueDeploy's infrastructure using Curl
+branding:
+  icon: 'upload-cloud'
+  color: 'blue'
