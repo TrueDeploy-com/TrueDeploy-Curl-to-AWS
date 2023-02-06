@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/44439128/217040157-abdab948-1064-4e4c-a889-98aa658b29b6.png">
+  <src="https://user-images.githubusercontent.com/44439128/217040157-abdab948-1064-4e4c-a889-98aa658b29b6.png">
 </p>
 
 # TrueDeploy-Curl-to-AWS
