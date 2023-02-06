@@ -1,2 +1,3 @@
 # TrueDeploy-Curl-to-AWS
-TrueDeploy-Curl-to-AWS Action
+
+This is the TrueDeploy-Curl-to-AWS GitHub Action
