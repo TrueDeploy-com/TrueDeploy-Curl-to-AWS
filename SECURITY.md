@@ -12,4 +12,5 @@ When submitting a report, please provide us with the following information:
 - What system/process the vulnerability affects
 
 We will update you once the vulnerability is fixed and will provide details on how we fixed the issue. 
+
 **THANK YOU** for helping us keep our systems secure!
