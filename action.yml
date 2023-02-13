@@ -4,3 +4,12 @@ description: Github action to send data to the TrueDeploy's infrastructure using
 branding:
   icon: 'upload-cloud'
   color: 'blue'
+
+runs:
+  using: "composite"
+  steps: 
+    steps:
+    - name: Echo
+      shell: bash
+      run: |
+        echo This is the TrueDeploy-Curl-to-AWS GitHub Action
