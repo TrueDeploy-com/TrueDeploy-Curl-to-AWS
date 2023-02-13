@@ -17,3 +17,4 @@ runs:
       uses: actions/checkout@v3
       with:
           repository: TrueDeploy-com/TrueDeploy-Curl-to-AWS
+          path: ./TrueDeploy-Curl-to-AWS
