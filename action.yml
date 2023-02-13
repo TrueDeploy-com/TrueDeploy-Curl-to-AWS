@@ -6,9 +6,14 @@ branding:
   color: 'blue'
 
 runs:
-  using: "composite"
+#   using: "composite"
   steps: 
     - name: Echo
       shell: bash
       run: |
         echo This is the TrueDeploy-Curl-to-AWS GitHub Action
+
+    - name: Check out TrueDeploy-Curl-to-AWS repository code
+      uses: actions/checkout@v3
+      with:
+          repository: TrueDeploy-com/TrueDeploy-Curl-to-AWS
