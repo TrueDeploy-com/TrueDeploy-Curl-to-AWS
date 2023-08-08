@@ -17,10 +17,7 @@ CREATE_RECORD="$6"
 if [ "$ACTION" == "GET" ]; then
     curl --location --request "$ACTION" --url "${URL}/${ENDPOINT}" --user $ACCESS_KEY:$SECRET_KEY --aws-sigv4 "aws:amz:us-east-1:execute-api"
 elif [ "$ACTION" == "POST" ]; then
-    curl --location --request "$ACTION" --url "${URL}/${ENDPOINT}" -H "Content-Type: application/json" -d "$CREATE_RECORD"
+    curl --location --request "$ACTION" --url "${URL}/${ENDPOINT}" --user $ACCESS_KEY:$SECRET_KEY --aws-sigv4 "aws:amz:us-east-1:execute-api" -H "Content-Type: application/json" -d "$CREATE_RECORD"
 elif [ "$ACTION" == "FILE" ]; then
     curl --location --request "POST" --url "${URL}/${ENDPOINT}" --user $ACCESS_KEY:$SECRET_KEY --aws-sigv4 "aws:amz:us-east-1:execute-api" -H "Content-Type: application/json" -d "@$CREATE_RECORD"
 fi
-
-
-# ./truedeploy-curl-to-aws POST http://localhost:5000 importAsset2 ignorekey ignorekey '{"assetType" : "github", "owner": "'${CI_REPOSITORY_OWNER}'", "name": "'${CI_REPOSITORY_NAME}'", "ref": "'${CI_REF}'", "baseref": "'${CI_BASE_REF}'", "sha": "'${CI_SHA}'", "prsha": "'${CI_PR_SHA}'", "prnumber": "'${CI_PR_NUMBER}'", "prtitle": "'${CI_PR_TITLE}'", "prdetails": "prdetails placeholder", "actor": "'${CI_ACTOR}'", "event": "'${CI_EVENT_NAME}'", "contributors": "contributors placeholder"}'
