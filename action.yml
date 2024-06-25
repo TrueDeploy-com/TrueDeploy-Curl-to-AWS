@@ -11,7 +11,7 @@ runs:
     - name: Echo
       shell: bash
       run: |
-        echo This is the TrueDeploy-Curl-to-AWS GitHub Action
+        echo This is the TrueDeploy-Curl-to-AWS GitHub Action with API Key Support
 
     - name: Check out TrueDeploy-Curl-to-AWS repository code
       uses: actions/checkout@v3
